@@ -1,0 +1,691 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{% static '/css/responsive.bootstrap4.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/dataTables.bootstrap4.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/buttons.bootstrap4.min.css' %}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{% static '/css/adminlte.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/fix.css' %}">
+    <link rel="stylesheet" href="{% static '/css/b.css' %}">
+    <link rel="stylesheet" href="{% static '/css/e.css' %}">
+    <link rel="stylesheet" href="{% static '/css/f.css' %}">
+    <link rel="stylesheet" href="{% static '/css/c.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+
+<body class="hold-transition sidebar-mini" style="color:#111">
+<div class="wrapper">
+    <!-- Navbar -->
+
+    <!-- Main Sidebar Container -->
+    <div class="modal1">
+        <span class="icon"><svg xml:space="preserve" viewBox="0 0 100 100" y="0" x="0"
+                                 xmlns="http://www.w3.org/2000/svg" id="圖層_1" version="1.1"
+                                 style="height: 20px; width: 20px; background: rgb(255, 255, 255);" width="200px"
+                                 height="200px"><g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);"><g class="ldl-ani"><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.740741s infinite normal forwards running breath-61c2d3ad-5b3a-4cfc-befa-557d582387db;"><path stroke-miterlimit="10" stroke-width="8" stroke="#333" fill="none" d="M76.5 90h-53C16 90 10 84 10 76.5v-53C10 16 16 10 23.5 10h53C84 10 90 16 90 23.5v53C90 84 84 90 76.5 90z" style="stroke: rgb(51, 51, 51);"></path></g></g><g
+                class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.925926s infinite normal forwards running breath-61c2d3ad-5b3a-4cfc-befa-557d582387db;"><path fill="#e15b64" d="M29.4 70.8c-1.8-1.1-2.4-3.5-1.3-5.3 4.9-7.8 10.7-14.8 17-21.1 6.4-6.3 13.3-12 20.4-17.1 1.6-1.2 3.8-.8 5 .9 1.1 1.6.9 3.8-.6 5.1-6.5 5.5-12.6 11.4-18.1 17.8-5.4 6.3-10.1 13.1-13.9 20.3-1 1.8-3.2 2.5-4.9 1.5l-3.6-2.1z" style="fill: rgb(225, 91, 100);"></path></g></g><g
+                class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-61c2d3ad-5b3a-4cfc-befa-557d582387db;"><path fill="#e15b64" d="M66.8 69c-1.8 1.1-4.1.5-5.2-1.3-3.7-6-8.5-11.5-13.8-16.6-5.4-5.2-11.4-9.9-17.7-14.4a3.82 3.82 0 0 1-1-5.2l.7-1.1c1.1-1.8 3.5-2.3 5.3-1.2 6.8 4.2 13.4 8.7 19.7 13.9 6.2 5.2 12.1 11.1 17 17.9 1.3 1.8.8 4.4-1.2 5.6L66.8 69z" style="fill: rgb(225, 91, 100);"></path></g></g><metadata
+                xmlns:d="https://loading.io/stock/"><d:name>close</d:name><d:tags>close,reject,off,disable,remove,delete,cancel,drop,collapse,square,form</d:tags><d:license>by</d:license><d:slug>7ptwg8</d:slug></metadata></g></g></svg></span>
+
+        <p class="text"></p>
+    </div>
+    <div class='overlay'></div>
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+            <div style="border-bottom:2px  solid #63b7df">
+                <svg width="126" style="margin-top:30px;margin-left:45px;margin-bottom:30px" height="41"
+                     viewBox="0 0 126 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.3327 27.3237V33.6163H35.521V27.3237H36.3327Z" fill="white"/>
+                    <path d="M37.8167 30.3217C37.8167 29.8547 37.8075 29.4719 37.7799 29.0982H38.5087L38.5548 29.8455H38.5732C38.7969 29.4166 39.3205 28.9956 40.0664 28.9956C40.6913 28.9956 41.6636 29.3692 41.6636 30.919V33.6173H40.8413V31.0124C40.8413 30.2836 40.5703 29.6771 39.7954 29.6771C39.2534 29.6771 38.8337 30.0599 38.6943 30.5178C38.6574 30.6204 38.6377 30.7611 38.6377 30.9006V33.6173H37.8154V30.3217H37.8167Z"
+                          fill="white"/>
+                    <path d="M42.9991 30.3217C42.9991 29.8547 42.9899 29.4719 42.9623 29.0982H43.6911L43.7372 29.8455H43.7556C43.9792 29.4166 44.5029 28.9956 45.2488 28.9956C45.8737 28.9956 46.8459 29.3692 46.8459 30.919V33.6173H46.0237V31.0124C46.0237 30.2836 45.7527 29.6771 44.9778 29.6771C44.4358 29.6771 44.0161 30.0599 43.8766 30.5178C43.8398 30.6204 43.8201 30.7611 43.8201 30.9006V33.6173H42.9978V30.3217H42.9991Z"
+                          fill="white"/>
+                    <path d="M52.2697 31.3203C52.2697 32.9911 51.112 33.7199 50.02 33.7199C48.7965 33.7199 47.8546 32.824 47.8546 31.3953C47.8546 29.8823 48.8439 28.9956 50.095 28.9956C51.3922 28.9956 52.2697 29.9389 52.2697 31.3203ZM48.6847 31.3676C48.6847 32.357 49.2544 33.1042 50.0569 33.1042C50.841 33.1042 51.4291 32.3662 51.4291 31.3492C51.4291 30.5835 51.0462 29.6126 50.0753 29.6126C49.1044 29.6126 48.6847 30.5086 48.6847 31.3676Z"
+                          fill="white"/>
+                    <path d="M53.5575 29.0968L54.4442 31.6359C54.5942 32.0464 54.7152 32.42 54.8086 32.7937H54.8363C54.9389 32.42 55.0691 32.0464 55.2191 31.6359L56.0966 29.0968H56.9557L55.1823 33.6159H54.3982L52.68 29.0968H53.5575Z"
+                          fill="white"/>
+                    <path d="M60.195 33.6174L60.1293 33.0477H60.1016C59.849 33.4029 59.3636 33.72 58.7203 33.72C57.8046 33.72 57.3389 33.0753 57.3389 32.4228C57.3389 31.3308 58.3098 30.7322 60.0556 30.7428V30.6493C60.0556 30.2757 59.953 29.6034 59.0281 29.6034C58.6084 29.6034 58.169 29.7337 57.852 29.9402L57.6651 29.3982C58.0388 29.1548 58.5808 28.9969 59.1491 28.9969C60.5305 28.9969 60.8673 29.9402 60.8673 30.8454V32.5359C60.8673 32.928 60.8857 33.3108 60.9423 33.6187H60.195V33.6174ZM60.074 31.3111C59.1781 31.2927 58.1598 31.4506 58.1598 32.3294C58.1598 32.8609 58.515 33.1135 58.9347 33.1135C59.5228 33.1135 59.8964 32.7398 60.0266 32.357C60.0543 32.2728 60.0727 32.1794 60.0727 32.0952V31.3111H60.074Z"
+                          fill="white"/>
+                    <path d="M63.1458 27.8014V29.0986H64.322V29.7235H63.1458V32.16C63.1458 32.7204 63.305 33.0375 63.7615 33.0375C63.976 33.0375 64.1352 33.0099 64.2378 32.9809L64.2746 33.5966C64.1154 33.6624 63.8641 33.7085 63.5458 33.7085C63.1629 33.7085 62.8551 33.5874 62.6591 33.3625C62.4262 33.1191 62.342 32.7178 62.342 32.1863V29.7209H61.6421V29.0959H62.342V28.0132L63.1458 27.8014Z"
+                          fill="white"/>
+                    <path d="M66.1614 27.8286C66.1706 28.1089 65.9654 28.3325 65.6391 28.3325C65.3497 28.3325 65.1445 28.1089 65.1445 27.8286C65.1445 27.5392 65.3589 27.3156 65.6576 27.3156C65.9654 27.3156 66.1614 27.5392 66.1614 27.8286ZM65.2458 33.6173V29.0982H66.068V33.6173H65.2458Z"
+                          fill="white"/>
+                    <path d="M71.5203 31.3203C71.5203 32.9911 70.3626 33.7199 69.2707 33.7199C68.0471 33.7199 67.1052 32.824 67.1052 31.3953C67.1052 29.8823 68.0945 28.9956 69.3456 28.9956C70.6428 28.9956 71.5203 29.9389 71.5203 31.3203ZM67.9353 31.3676C67.9353 32.357 68.505 33.1042 69.3075 33.1042C70.0916 33.1042 70.6797 32.3662 70.6797 31.3492C70.6797 30.5835 70.2968 29.6126 69.3259 29.6126C68.355 29.6126 67.9353 30.5086 67.9353 31.3676Z"
+                          fill="white"/>
+                    <path d="M72.5565 30.3217C72.5565 29.8547 72.5473 29.4719 72.5197 29.0982H73.2485L73.2945 29.8455H73.313C73.5366 29.4166 74.0602 28.9956 74.8075 28.9956C75.4324 28.9956 76.4046 29.3692 76.4046 30.919V33.6173H75.5824V31.0124C75.5824 30.2836 75.3114 29.6771 74.5365 29.6771C73.9944 29.6771 73.5748 30.0599 73.4353 30.5178C73.3985 30.6204 73.3787 30.7611 73.3787 30.9006V33.6173H72.5565V30.3217Z"
+                          fill="white"/>
+                    <path d="M77.6259 32.778C77.868 32.9372 78.2982 33.1042 78.7086 33.1042C79.3059 33.1042 79.5861 32.8056 79.5861 32.432C79.5861 32.0399 79.3533 31.8255 78.7455 31.6005C77.9337 31.3111 77.5509 30.8624 77.5509 30.3217C77.5509 29.5929 78.139 28.9956 79.1099 28.9956C79.5677 28.9956 79.969 29.1259 80.2216 29.2758L80.0163 29.8731C79.8387 29.7613 79.5125 29.6113 79.0915 29.6113C78.606 29.6113 78.335 29.8915 78.335 30.227C78.335 30.6006 78.606 30.769 79.1941 30.9927C79.9782 31.2913 80.3794 31.6834 80.3794 32.3557C80.3794 33.149 79.7637 33.7094 78.6902 33.7094C78.1955 33.7094 77.7377 33.5884 77.4207 33.4016L77.6259 32.778Z"
+                          fill="white"/>
+                    <path d="M83.4989 33.6171V29.7243H82.8635V29.0993H83.4989V28.8849C83.4989 28.2495 83.6384 27.6706 84.0212 27.3075C84.3291 27.0089 84.7395 26.8878 85.1224 26.8878C85.4118 26.8878 85.6644 26.9536 85.8223 27.0181L85.7104 27.6535C85.5894 27.5969 85.421 27.5509 85.1881 27.5509C84.4882 27.5509 84.3106 28.1666 84.3106 28.8586V29.102H85.4026V29.7269H84.3106V33.6198H83.4989V33.6171Z"
+                          fill="white"/>
+                    <path d="M90.1083 31.3203C90.1083 32.9911 88.9506 33.7199 87.8587 33.7199C86.6352 33.7199 85.6932 32.824 85.6932 31.3953C85.6932 29.8823 86.6825 28.9956 87.9337 28.9956C89.2308 28.9956 90.1083 29.9389 90.1083 31.3203ZM86.5233 31.3676C86.5233 32.357 87.093 33.1042 87.8955 33.1042C88.6796 33.1042 89.2677 32.3662 89.2677 31.3492C89.2677 30.5835 88.8848 29.6126 87.9139 29.6126C86.943 29.6126 86.5233 30.5086 86.5233 31.3676Z"
+                          fill="white"/>
+                    <path d="M91.1432 30.5086C91.1432 29.9757 91.134 29.5192 91.1063 29.0982H91.8246L91.8523 29.9849H91.8891C92.0943 29.3784 92.589 28.9956 93.1402 28.9956C93.2337 28.9956 93.2994 29.0048 93.3731 29.0232V29.7981C93.2889 29.7797 93.2047 29.7705 93.0929 29.7705C92.514 29.7705 92.1035 30.2099 91.9917 30.8256C91.9733 30.9374 91.9549 31.069 91.9549 31.2085V33.6173H91.1432V30.5086Z"
+                          fill="white"/>
+                    <path d="M96.2043 27.3237H97.0161V32.9348H99.7052V33.6163H96.2043V27.3237Z" fill="white"/>
+                    <path d="M101.498 27.8286C101.507 28.1089 101.302 28.3325 100.975 28.3325C100.686 28.3325 100.481 28.1089 100.481 27.8286C100.481 27.5392 100.695 27.3156 100.994 27.3156C101.302 27.3156 101.498 27.5392 101.498 27.8286ZM100.583 33.6173V29.0982H101.406V33.6173H100.583Z"
+                          fill="white"/>
+                    <path d="M102.851 33.6171V29.7243H102.216V29.0993H102.851V28.8849C102.851 28.2495 102.991 27.6706 103.374 27.3075C103.682 27.0089 104.092 26.8878 104.475 26.8878C104.764 26.8878 105.017 26.9536 105.175 27.0181L105.063 27.6535C104.942 27.5969 104.773 27.5509 104.541 27.5509C103.841 27.5509 103.663 28.1666 103.663 28.8586V29.102H104.755V29.7269H103.663V33.6198H102.851V33.6171Z"
+                          fill="white"/>
+                    <path d="M105.83 31.5071C105.848 32.6188 106.559 33.0753 107.38 33.0753C107.968 33.0753 108.323 32.9727 108.631 32.8424L108.77 33.4305C108.481 33.5608 107.986 33.7107 107.266 33.7107C105.876 33.7107 105.044 32.7964 105.044 31.4321C105.044 30.0691 105.847 28.9956 107.164 28.9956C108.639 28.9956 109.031 30.2928 109.031 31.1243C109.031 31.2927 109.012 31.4229 109.003 31.5071H105.83ZM108.239 30.919C108.248 30.3967 108.024 29.5837 107.099 29.5837C106.268 29.5837 105.905 30.3494 105.839 30.919H108.239Z"
+                          fill="white"/>
+                    <path d="M108.636 9.2583C109.463 9.2583 110.828 9.2583 110.828 9.2583C110.828 9.2583 110.839 16.0521 110.812 19.4227C110.775 20.1068 110.476 20.7067 110.151 21.2606C108.825 23.5208 105.16 24.5167 101.738 23.6037C99.0898 22.8959 97.6282 20.8935 97.6216 17.9373C97.615 15.0772 97.6203 12.2171 97.6203 9.2833C98.757 9.2833 99.7752 9.2833 101.013 9.2833C101.013 10.0319 101.013 10.8094 101.013 11.5869C101.013 13.8932 100.975 16.1994 101.025 18.5044C101.078 20.9159 102.659 22.513 104.869 22.4959C107.016 22.4788 108.573 20.9172 108.62 18.5623C108.683 15.5101 108.636 12.4552 108.636 9.2583Z"
+                          fill="white"/>
+                    <path d="M117.979 17.3712C117.979 19.5538 117.979 21.4785 117.979 23.5151C116.785 23.5151 115.64 23.5151 114.398 23.5151C114.398 18.8223 114.398 9.11708 114.398 9.11708C114.398 9.11708 118.995 8.93684 121.243 9.25785C123.851 9.63148 125.174 11.4707 125.043 13.5809C124.92 15.5372 123.161 17.1278 120.775 17.358C119.9 17.4422 119.011 17.3712 117.979 17.3712ZM118.048 10.7011C118.048 12.4298 118.048 14.1493 118.048 15.8951C119.234 16.1332 120.453 16.0858 120.863 14.9202C121.201 13.9598 121.222 12.6942 120.887 11.7378C120.488 10.5998 119.262 10.4853 118.048 10.7011Z"
+                          fill="white"/>
+                    <path d="M83.4819 19.9519C84.5568 19.9519 85.5882 19.9519 85.5882 19.9519C85.5882 19.9519 85.7435 20.3755 86.5499 21.2846C87.5037 22.3581 89.3285 22.8844 90.5625 22.1016C91.5321 21.4872 91.7426 20.2321 90.8506 19.3033C90.1849 18.61 89.2995 18.1153 88.4747 17.5877C87.3301 16.8563 86.0421 16.3077 85.0107 15.4459C83.2057 13.9369 83.3609 11.5425 85.2001 10.098C88.4207 7.57073 93.4042 9.0429 94.3567 12.8042C93.1911 12.8068 92.2465 12.8042 92.2465 12.8042C92.2465 12.8042 92.0044 12.3003 91.5742 11.6952C91.1032 11.0334 90.2678 10.3388 88.9864 10.394C88.0155 10.4361 87.1104 10.6479 86.721 11.6754C86.3131 12.7555 86.8972 13.5278 87.7261 14.0619C88.8286 14.7737 90.0231 15.3407 91.1493 16.0182C91.9505 16.5011 92.7793 16.9813 93.4608 17.6088C94.7606 18.8073 94.8948 20.5347 93.8094 21.9332C92.257 23.9329 90.0376 24.0816 87.78 23.829C85.7014 23.5961 84.17 22.5449 83.5635 20.4216C83.5398 20.336 83.5004 20.1571 83.4819 19.9519Z"
+                          fill="white"/>
+                    <path d="M73.1236 22.2118C75.5049 22.2118 77.7953 22.2118 80.1674 22.2118C80.1674 22.7118 80.1674 23.1051 80.1674 23.563C76.6837 23.563 73.2657 23.563 69.7531 23.563C69.7531 18.8163 69.7531 14.0932 69.7531 9.20972C73.05 9.20972 80.1555 9.20972 80.1555 9.20972V10.3148C80.1555 10.3148 75.5141 10.3148 73.1223 10.3148C73.1223 11.9593 73.1223 13.4473 73.1223 15.1457C74.7866 15.1457 78.9189 15.1457 78.9189 15.1457L78.9149 16.2679C78.9149 16.2679 75.0984 16.2679 73.1236 16.2679C73.1236 18.2716 73.1236 20.1371 73.1236 22.2118Z"
+                          fill="white"/>
+                    <path d="M56.1578 23.5545C56.1578 18.767 56.1578 14.0742 56.1578 9.29333C59.5192 9.29333 66.1564 9.29333 66.1564 9.29333V10.3458C66.1564 10.3458 61.49 10.3366 59.5205 10.3366C59.5205 11.9482 59.5205 15.0991 59.5205 15.0991H65.2434L65.246 16.2818L59.5205 16.2739C59.5205 16.2739 59.5205 21.1127 59.5205 23.5545C58.3496 23.5545 57.3314 23.5545 56.1578 23.5545Z"
+                          fill="white"/>
+                    <path d="M38.5559 22.2054C41.1029 22.2054 45.9641 22.2054 45.9641 22.2054V23.5328C45.9641 23.5328 38.8677 23.5328 35.288 23.5328C35.288 18.8164 35.288 14.1276 35.288 9.32166C36.3036 9.32166 37.3521 9.32166 38.5559 9.32166C38.5559 13.5303 38.5559 17.7849 38.5559 22.2054Z"
+                          fill="white"/>
+                    <path d="M52.064 23.5617C50.947 23.5617 49.93 23.5617 48.842 23.5617C48.842 18.8111 48.842 14.1222 48.842 9.31897C49.8643 9.31897 50.9141 9.31897 52.064 9.31897C52.064 14.0038 52.064 18.7255 52.064 23.5617Z"
+                          fill="white"/>
+                    <path d="M30.0899 11.6467H7.78644C7.15627 11.6467 6.64581 12.1572 6.64581 12.7874V35.0921C6.64581 35.7223 7.15627 36.2327 7.78644 36.2327H30.0912C30.7214 36.2327 31.2318 35.7223 31.2318 35.0921V12.786C31.2305 12.1572 30.7201 11.6467 30.0899 11.6467Z"
+                          fill="#6BD5D1"/>
+                    <path d="M31.1603 0H25.2112C24.927 0 24.6954 0.230231 24.6954 0.515717V6.15308C24.6954 6.43725 24.9257 6.6688 25.2112 6.6688H31.1603C31.4445 6.6688 31.676 6.43857 31.676 6.15308V0.515717C31.676 0.230231 31.4458 0 31.1603 0Z"
+                          fill="#19C6C0"/>
+                    <path d="M4.30576 36.4987H1.25093C1.06279 36.4987 0.911499 36.6513 0.911499 36.8381V39.8929C0.911499 40.0811 1.06411 40.2323 1.25093 40.2323H4.30576C4.49389 40.2323 4.64519 40.0797 4.64519 39.8929V36.8381C4.64519 36.6513 4.49389 36.4987 4.30576 36.4987Z"
+                          fill="white"/>
+                    <path d="M18.9289 2.40063H0.920923C0.411784 2.40063 0 2.81242 0 3.32156V21.3296C0 21.8387 0.411784 22.2505 0.920923 22.2505H18.9289C19.4381 22.2505 19.8498 21.8387 19.8498 21.3296V3.32156C19.8498 2.81242 19.4381 2.40063 18.9289 2.40063Z"
+                          fill="#00BDF5" fill-opacity="0.85"/>
+                </svg>
+                <!-- SidebarSearch Form -->
+            </div>
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+with font-awesome or any other icon font library -->
+
+                    <li class="nav-item ">
+                        <a href="http://103.226.248.168/data" class="nav-link arrow " style="display: flex; align-items: center">
+                            <svg xml:space="preserve" viewBox="0 0 100 100" y="0" x="0"
+                                 xmlns="http://www.w3.org/2000/svg" id="圖層_1" version="1.1"
+                                 style="height: 10%; width: 10%; background: rgb(255, 255, 255);" width="200px"
+                                 height="200px"><g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);"><g class="ldl-ani"><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.648148s infinite normal forwards running breath-0d210439-c789-405c-8f9a-4f36d761ead5 ;">
+                                    <path stroke-linecap="round" stroke-width="3.9" stroke="#333" fill="#e0e0e0"
+                                          d="M82.3 89H17.7C14 89 11 86 11 82.3V17.7c0-3.7 3-6.7 6.7-6.7h64.6c3.7 0 6.7 3 6.7 6.7v64.6c0 3.7-3 6.7-6.7 6.7z"
+                                          style="fill: rgb(224, 224, 224); stroke: rgb(51, 51, 51);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani"><g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.740741s infinite normal forwards running breath-0d210439-c789-405c-8f9a-4f36d761ead5;"><path d="M26.087 61.52L57.41 30.195l12.374 12.374-31.324 31.325z" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.68597314" stroke="#333" fill="#eba523" style="fill: rgb(235, 165, 35); stroke: rgb(51, 51, 51);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-0d210439-c789-405c-8f9a-4f36d761ead5;"><path stroke-linecap="round" stroke-width="2.686" stroke="#333" fill="#e0e0e0" d="M69.8 42.6l6.3-6.3c1.4-1.4 1.4-3.8 0-5.2L68.9 24c-1.4-1.4-3.8-1.4-5.2 0l-6.3 6.3 12.4 12.3z" style="fill: rgb(224, 224, 224); stroke: rgb(51, 51, 51);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.925926s infinite normal forwards running breath-0d210439-c789-405c-8f9a-4f36d761ead5;"><path d="M24.4 69.9l5.7 5.7 8.3-1.7-6.1-6.2-6.2-6.1z" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.686" stroke="#333" fill="#f5e6c8" style="fill: rgb(245, 230, 200); stroke: rgb(51, 51, 51);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.01852s infinite normal forwards running breath-0d210439-c789-405c-8f9a-4f36d761ead5;"><path d="M22.9 77.1l7.2-1.5-5.7-5.7z" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.686" stroke="#333" fill="#333" style="fill: rgb(51, 51, 51); stroke: rgb(51, 51, 51);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-0d210439-c789-405c-8f9a-4f36d761ead5;"><path d="M36.9 63.1l21.8-21.8" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.686" stroke="#333" fill="none" style="stroke: rgb(51, 51, 51);"></path></g></g></g></g></g><metadata
+                                    xmlns:d="https://loading.io/stock/"><d:name>pencil</d:name>
+                                <d:tags>draw,sketch,write,paint,artist,edit,compose,pencil,web application</d:tags>
+                                <d:license>pro</d:license>
+                                <d:slug>gt6okx</d:slug></metadata></g></g></svg>
+                            <p style="margin-left : 10px">
+                                Data_visualization
+                            </p>
+                        </a>
+                        {% comment %} <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/form" class="nav-link" >
+                                        <svg xml:space="preserve" viewBox="0 0 100 100" y="0" x="0" xmlns="http://www.w3.org/2000/svg" id="圖層_1" version="1.1" style="    margin-left: 11px;height: 10%; width: 10%; background: rgb(255, 255, 255);" width="200px" height="200px"><g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);"><g class="ldl-ani"><g class="ldl-layer"><g class="ldl-ani"><g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.625s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path fill="#333" d="M86.1 18.4H14.3c-3.7 0-6.8 3-6.8 6.8v56.4c0 3.7 3 6.8 6.8 6.8h71.5c3.7 0 6.8-3 6.8-6.8V25.2c-.1-3.6-2.9-6.6-6.5-6.8z" style="fill: rgb(51, 51, 51);"></path></g></g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.694444s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path d="M86.2 18.4z" fill="#333" style="fill: rgb(51, 51, 51);"></path></g></g></g></g></g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.763889s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path fill="#fff" d="M14.3 82.5h71.5c.5 0 1-.4 1-1V42.7H13.3v38.8c0 .6.4 1 1 1z" style="fill: rgb(255, 255, 255);"></path></g></g><g class="ldl-layer"><g class="ldl-ani"><g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path fill="#e0e0e0" d="M29.7 37.2c-4.4 0-8-3.6-8-8V17.7c0-4.4 3.6-8 8-8s8 3.6 8 8v11.5c0 4.4-3.6 8-8 8z" style="fill: rgb(224, 224, 224);"></path></g></g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.902778s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path fill="#333" d="M29.7 11.7c3.3 0 6 2.7 6 6v11.5c0 3.3-2.7 6-6 6s-6-2.7-6-6V17.7c0-3.3 2.7-6 6-6m0-4c-5.5 0-10 4.5-10 10v11.5c0 5.5 4.5 10 10 10s10-4.5 10-10V17.7c0-5.5-4.5-10-10-10z" style="fill: rgb(51, 51, 51);"></path></g></g></g></g></g><g class="ldl-layer"><g class="ldl-ani"><g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.972222s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path fill="#e0e0e0" d="M69.6 37.2c-4.4 0-8-3.6-8-8V17.7c0-4.4 3.6-8 8-8s8 3.6 8 8v11.5c0 4.4-3.5 8-8 8z" style="fill: rgb(224, 224, 224);"></path></g></g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.04167s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path fill="#333" d="M69.6 11.7c3.3 0 6 2.7 6 6v11.5c0 3.3-2.7 6-6 6s-6-2.7-6-6V17.7c0-3.3 2.7-6 6-6m0-4c-5.5 0-10 4.5-10 10v11.5c0 5.5 4.5 10 10 10s10-4.5 10-10V17.7c0-5.5-4.4-10-10-10z" style="fill: rgb(51, 51, 51);"></path></g></g></g></g></g><g class="ldl-layer"><g class="ldl-ani"><g><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-86f42d61-976a-4d18-b2a8-6059989ee35e;"><path d="M46.8 75.8L32.5 61.4l5.7-5.7 8.6 8.7 15-15 5.7 5.7z" fill="#e15b64" style="fill: rgb(225, 91, 100);"></path></g></g></g></g></g><metadata xmlns:d="https://loading.io/stock/">
+                                            <d:name>calendar</d:name>
+                                            <d:tags>rsvp,accept,schedule,date,time,plan,agenda,journal,calendar,web application</d:tags>
+                                            <d:license>by</d:license>
+                                            <d:slug>jnf53l</d:slug>
+                                            </metadata></g></g></svg>
+                                        <p style="margin-left : 10px">Schedule</p>
+                                    </a>
+                                </li>
+                            </ul> {% endcomment %}
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link " style="display: flex; align-items: center">
+                            <svg xml:space="preserve" viewBox="0 0 100 100" y="0" x="0"
+                                 xmlns="http://www.w3.org/2000/svg" id="圖層_1" version="1.1"
+                                 style="height: 10%; width: 10%; background: rgb(255, 255, 255);" width="200px"
+                                 height="200px"><g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);"><g class="ldl-ani"><g class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.58642s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M28.8 42.7h11.6v10.6H28.8z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.617284s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M44.2 71.7h11.6v10.7H44.2z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.648148s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M44.2 57.2h11.6v10.7H44.2z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.679012s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M44.2 42.7h11.6v10.6H44.2z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.709877s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M28.8 57.2h11.6v10.7H28.8z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.740741s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M28.8 71.7h11.6v10.7H28.8z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.771605s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path fill="#fff" d="M13.3 42.6v10.7h11.6V42.7H14.3c-.4 0-.7-.1-1-.1z" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.802469s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path fill="#fff" d="M13.3 81.5c0 .5.4.9.9 1h10.7V71.7H13.3v9.8z" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.833333s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path fill="#e0e0e0" d="M35.5 28.2V17.6c0-3.2-2.6-5.8-5.8-5.8s-5.8 2.6-5.8 5.8V28.2c0 3.2 2.6 5.8 5.8 5.8s5.8-2.6 5.8-5.8z" style="fill: rgb(224, 224, 224);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.864198s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M13.3 57.2h11.6v10.7H13.3z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.895062s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path fill="#fff" d="M75.1 82.4h10.7c.5 0 .9-.4.9-1v-9.8H75.1v10.8z" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.925926s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path fill="#fff" d="M75.1 42.7v10.6h11.6V42.6c-.3.1-.6.1-1 .1H75.1z" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.95679s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M75.1 57.2h11.6v10.7H75.1z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -0.987654s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M59.7 42.7h11.6v10.6H59.7z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.01852s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M59.7 57.2h11.6v10.7H59.7z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.04938s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path fill="#e0e0e0" d="M75.4 18.3v-.8c0-3.2-2.6-5.8-5.8-5.8-3.2 0-5.8 2.6-5.8 5.8V28.1c0 3.2 2.6 5.8 5.8 5.8 3.2 0 5.8-2.6 5.8-5.8v-9.8z" style="fill: rgb(224, 224, 224);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.08025s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path d="M59.7 71.7h11.6v10.7H59.7z" fill="#fff" style="fill: rgb(255, 255, 255);"></path></g></g><g
+                                    class="ldl-layer"><g class="ldl-ani" style="transform: scale(0.91); transform-origin: 50px 50px; animation: 1.11111s linear -1.11111s infinite normal forwards running breath-a3c8570d-ed5a-4f84-8767-769315f04b8e;"><path fill="#333" d="M85.7 18.3h-6.3v-.8c0-5.4-4.4-9.8-9.8-9.8s-9.8 4.4-9.8 9.8v.8H39.5v-.8c0-5.4-4.4-9.8-9.8-9.8s-9.8 4.4-9.8 9.8v.8h-5.7c-3.7 0-6.8 3-6.8 6.8v56.4c0 3.7 3 6.8 6.8 6.8h71.5c3.7 0 6.8-3 6.8-6.8V25.1c0-3.7-3-6.8-6.8-6.8zM24.9 82.4H14.2c-.5 0-.9-.4-.9-1v-9.8h11.6v10.8zm0-14.5H13.3V57.2h11.6v10.7zm0-14.6H13.3V42.6c.3.1.6.1 1 .1h10.6v10.6zm-1-25.1V17.6c0-3.2 2.6-5.8 5.8-5.8s5.8 2.6 5.8 5.8V28.2c0 3.2-2.6 5.8-5.8 5.8s-5.8-2.6-5.8-5.8zm16.4 54.2H28.8V71.7h11.6v10.7zm0-14.5H28.8V57.2h11.6v10.7zm0-14.6H28.8V42.7h11.6v10.6zm15.5 29.1H44.2V71.7h11.6v10.7zm0-14.5H44.2V57.2h11.6v10.7zm0-14.6H44.2V42.7h11.6v10.6zm15.5 29.1H59.7V71.7h11.6v10.7zm0-14.5H59.7V57.2h11.6v10.7zm0-14.6H59.7V42.7h11.6v10.6zm-1.7-19.4c-3.2 0-5.8-2.6-5.8-5.8V17.5c0-3.2 2.6-5.8 5.8-5.8 3.2 0 5.8 2.6 5.8 5.8V28.1c0 3.3-2.6 5.8-5.8 5.8zm17.1 47.6c0 .5-.4.9-.9 1H75.1V71.7h11.6v9.8zm0-13.6H75.1V57.2h11.6v10.7zm0-14.6H75.1V42.7h10.6c.3 0 .7 0 1-.1v10.7z" style="fill: rgb(51, 51, 51);"></path></g></g><metadata
+                                    xmlns:d="https://loading.io/stock/">
+                                        <d:name>calendar</d:name>
+                                <d:tags>schedule,date,time,plan,agenda,journal,calendar,web application</d:tags>
+                                <d:license>by</d:license>
+                                <d:slug>pzemvt</d:slug>
+                                        </metadata></g></g></svg>
+                            <p style="margin-left : 10px">
+                                Tables
+                            </p>
+                        </a>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="background-color:#ecf0f5; position : relative">
+        <!-- Content Header (Page header) -->
+        <section class="content-header body">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1 style="text-align:center;color:white;font-weight:700;font-size:30px">Crawl Data</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid" style="padding: 0">
+                <div class="row">
+                    <div class="col-12" style="padding: 0">
+                        <div class="card">
+                            <div class="row mr-0 ml-0 " >
+                                <div class="col-12 card-header"
+                                     style="display:flex; justify-content: center; align-items: center; background-color:#ccc">
+                                    <div>
+                                    <a href="/export-excel" style="left: 38%;position: absolute;top: 29%;">Export
+                                        xls</a>
+                                    <a href="/export-csv ">Export csv</a>
+                                    </div>
+                                    <form method="POST" action="/search" style="display:flex">
+                                        <div class="row"></div>
+                                        <div class="col-8 card-search">
+                                            {% csrf_token %}
+                                            <div class="input-group"
+                                                 style="width: 300px; margin-left: 280%;position: absolute;">
+                                                <input type="text" class="form-control" name="Key_word"
+                                                       placeholder="Recipient's username"
+                                                       aria-label="Recipient's username"
+                                                       aria-describedby="button-addon2">
+                                                <button class="btn btn-outline-secondary" type="submit"
+                                                        id="button-addon2">Search
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 card-select">
+
+                                            <select class="custom-select" name="Social_Network"
+                                                    aria-label="Default select example" style="width: 120px;">
+                                                <option value="" {% if choice == '' %} selected="selected" {% endif %}>
+                                                    All
+                                                </option>
+                                                <option value="Twitter" {% if choice == 'Twitter' %}
+                                                        selected="selected" {% endif %}>Twitter
+                                                </option>
+                                                <option value="Linkedin" {% if choice == 'Linkedin' %}
+                                                        selected="selected" {% endif %}>Linkedin
+                                                </option>
+                                                <option value="Facebook" {% if choice == 'Facebook' %}
+                                                        selected="selected" {% endif %}>Facebook
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </form>
+
+                                    <form method="POST" action="/search1" style="display:flex">
+                                        <div class="row"></div>
+                                        <div class="col-8 card-search">
+                                            {% csrf_token %}
+                                            <div class="input-group"
+                                                 style="width: 300px;width: 297px;bottom: -18px;right: 500px;position: absolute;">
+                                                <input type="text" class="form-control" name="Names"
+                                                       placeholder="Recipient's username"
+                                                       aria-label="Recipient's username"
+                                                       aria-describedby="button-addon2">
+                                                <button class="btn btn-outline-secondary" type="submit"
+                                                        id="button-addon2">Search1
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div> 
+                            <!-- /.card-header -->
+                            <div class="card-body " style="padding: 0 ;">
+                                <div style="height: 665px;  display: flex;  overflow: scroll;   width: 99%;     position: relative;">
+                                <table id="example2" class="table table-bordered">
+                                    <thead style="position: sticky; top: -2px;">
+                                    <tr style="color:#fff ; background-color:#63b7df">
+                                        <th style="text-align: center;">Social_Network</th>
+                                        <th style="text-align: center;">Key_word</th>
+                                        <th style="text-align: center;">Names</th>
+                                        <th style="text-align: center;">Link_post</th>
+                                        <th style="text-align: center;">post</th>
+                                        <th style="text-align: center;">comment</th>
+                                        {% comment %} <th style="text-align: center;">device</th> {% endcomment %}
+                                        <th style="text-align: center;">location</th>
+                                        <th style="text-align: center;">Job_title</th>
+                                        <th style="text-align: center;">time</th>
+                                        <th style="text-align: center;">user</th>
+                                        <th style="text-align: center;">Note</th>
+                                        <th style="text-align: center;">Action</th>
+
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <div class="show-hide-text wrapper">
+                                        {% for i in employee %}
+                                            <tr>
+                                                <td><span
+                                                        style="width: 90px; margin-left:15px">{{ i.Social_Network }}</span>
+                                                </td>
+                                                <td><span style="margin-left:15px">{{ i.Key_word }}</span></td>
+                                                {% comment %} <td><span style="margin-left:15px">{{ i.id }}</span></td> {% endcomment %}
+
+                                                <td><span style="margin-left:15px" class="a u-{{ i.Post_Id }}"
+                                                        onclick="handleClick(`u`,`{{ i.Post_Id }}`)">{{ i.Names }}</span>
+                                                </td>
+                                                <td><a style="margin-left:15px"m  class="a w-{{ i.Post_Id }} link-post" 
+                                                        onclick="handleClick(`w`,`{{ i.Post_Id }}`)" href={{i.Link_post }}>{{i.Link_post}}</a>
+                                                </td>
+                                                <td><span style="margin-left:15px" class="a r-{{ i.Post_Id }}"
+                                                        onclick="handleClick(`r`,`{{ i.Post_Id }}`)">{{ i.post }}</span>
+                                                </td>
+                                                <td><span style="margin-left:15px" class="a d-{{ i.Post_Id }}"
+                                                        onclick="handleClick(`d`,`{{ i.Post_Id }}`)">{{ i.comment }}</span>
+                                                </td>
+                                                {% comment %} <td><span style="margin-left:15px" class="a g-{{ i.Post_Id }}"
+                                                        onclick="handleClick(`g`,`{{ i.Post_Id }}`)">{{ i.device }}</span>
+                                                </td> {% endcomment %}
+                                                <td><span style="margin-left:15px" class="a e-{{ i.Post_Id }}"
+                                                        onclick="handleClick(`e`,`{{ i.Post_Id }}`)">{{ i.location }}</span>
+                                                </td>
+                                                <td><span style="margin-left:15px" class="a j-{{ i.Post_Id }}" 
+                                                        onclick="handleClick(`j`,`{{ i.Post_Id }}`)">{{ i.Job_title }}</span>
+                                                </td>
+                                                <td><span style="margin-left:15px" >
+                                                        {{ i.time }}</span>
+                                                </td>   
+                                                <td><span style="margin-left:15px" class="a l-{{ i.Post_Id }}" 
+                                                        onclick="handleClick(`l`,`{{ i.Post_Id }}`)">{{ i.user }}</span>
+                                                </td>
+                                                <td><span style="margin-left:15px" class="a k-{{ i.Post_Id }}" 
+                                                        onclick="handleClick(`k`,`{{ i.Post_Id }}`)">{{ i.Note }}</span>
+                                                </td>
+                                                
+                                                <th>
+                                                    <button onclick ="myfunc({{i.id}},'l-{{ i.Post_Id }}','k-{{ i.Post_Id }}')"> Edit</button>
+                                                </th>
+                                                
+                                            </tr>
+                                        {% endfor %}
+                                    </div>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <nav aria-label="Page navigation example" style="margin-top: 15px">
+                                    <ul class="pagination justify-content-center">
+                                        {% if employee.has_previous %}
+                                            <li class="page-item">
+                                                <a class="page-link" href="?page={{ employee.previous_page_number }}">Previous</a>
+                                            </li>
+                                        {% else %}
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="True">Previous</a>
+                                            </li>
+                                        {% endif %}
+
+                                        {% if employee.number|add:'-4' > 1 %}
+                                            <li class="page-item"><a class="page-link"
+                                                                     href="?page={{ employee.number|add:'-5' }}">&hellip;</a>
+                                            </li>
+                                        {% endif %}
+
+                                        {% for i in employee.paginator.page_range %}
+                                            {% if employee.number == i %}
+                                                <li class="page-item active" aria-current="page">
+                                          <span class="page-link">
+                                            {{ i }}
+                                            <span class="sr-only">(current)</span>
+                                          </span>
+                                                </li>
+                                            {% elif i > employee.number|add:'-5' and i < employee.number|add:'5' %}
+                                                <li class="page-item"><a class="page-link"
+                                                                         href="?page={{ i }}">{{ i }}</a></li>
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        {% if employee.paginator.num_pages > employee.number|add:'4' %}
+                                            <li class="page-item"><a class="page-link"
+                                                                     href="?page={{ employee.number|add:'5' }}">&hellip;</a>
+                                            </li>
+                                        {% endif %}
+
+                                        {% if employee.has_next %}
+                                            <li class="page-item">
+                                                <a class="page-link"
+                                                   href="?page={{ employee.next_page_number }}">Next</a>
+                                            </li>
+                                        {% else %}
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1"
+                                                   aria-disabled="True">Next</a>
+                                            </li>
+                                        {% endif %}
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+                <style>
+                        #popup_edit{
+                            background:white;
+                            display:flex;
+                            flex-direction:column;
+                            min-height:max-content;
+
+                        }
+                        #popup_edit div{
+                            padding:5px 20px;
+                            background:transparent;
+                        }
+                        
+
+
+                </style>
+            <div id="popup_edit_background" style="position: fixed;
+    display:none;
+    z-index: 900;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100vw;">
+                <div style="z-index: 950;
+                height: 400px;
+                width: 50vw;
+                margin: auto;
+                margin-top: 25vh;
+                position: relative;">
+                    <div style="    height: 100px;
+                    background: white;
+                    padding: 20px;"><h1>Form edit</h1></div>
+                    <div id="popup_edit" style="height: 250px;width: 100%;">
+                    </div>
+                   <div style="width: 100%;
+                   background: white;
+                   height: 50px;
+                   display:flex;
+                   flex-direction:row;
+                   justify-content: center;
+                   padding: 10px;"> <button onclick="updateItem()" style="z-index: 950;
+                   background: white;
+                   position: relative;
+                   margin-left: -20px;
+    margin-right: 20px;
+                   bottom: 0px;">Update Item</button>
+
+
+                   <button onclick="cancelFunction();"; style="z-index: 950;
+                   background: white;
+                   bottom: 0px;">Cancel</button>
+                    
+
+                </div>
+                    </div>
+
+    </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    
+
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+            <b>Version</b> 1.0.0-rc
+        </div>
+        <strong>Lifesup &copy; 2021-2022</strong> Destroy   
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<script>
+    let dropdown = document.querySelector(".arrow");
+    dropdown.onclick = function () {
+        dropdown.classList.toggle('active');
+    }
+    let cout = 1;
+
+    function handleClick(v, e) {
+        console.log('sssssss', e)
+        if (cout % 2 !== 0 && document.querySelector(`.${v}-${e}`).innerText.length < 100) {
+            document.querySelector(`.${v}-${e}`).style.display = 'block'
+        } else {
+            document.querySelector(`.${v}-${e}`).style.display = '-webkit-box'
+        }
+        cout++
+
+
+        //
+        document.querySelector(`.${v}-${e}`).value
+        console.log(document.querySelector(`.${v}-${e}`).innerText.length)
+        if (document.querySelector(`.${v}-${e}`).innerText.length > 100) {
+            document.querySelector(".modal1").style.display = "block";
+            document.querySelector(".overlay").style.display = "block";
+            document.querySelector(".text").innerText = document.querySelector(`.${v}-${e}`).innerText
+        }
+        
+    }
+
+    document.querySelector(".icon").onclick = function () {
+        document.querySelector(".modal1").style.display = "none";
+        document.querySelector(".overlay").style.display = "none";
+
+    }
+    var current_row_user ;
+    var current_row_note;
+    function myfunc(id,id_user,id_note){
+        current_row_user = id_user;
+        current_row_note = id_note;
+     $.get( `/api/tutorials/${id}`, function( data ) {
+            var datatable = '';
+//            data.forEach(element => {
+                // var tr =  ""
+//                datatable += template_string
+    
+//            });
+        console.log('keys:',Object.keys(data).length);
+        const object_output = Object.entries(Object.entries(data))
+        for (const [index,[key, value]] of object_output) {
+
+            if(index==object_output.length -2 
+            || index==object_output.length -3 || index==object_output.length -11 ){
+
+                const template_string = `<div >${key}:</div><div><input style="min-width:100%;" id="form_${key}" type="text" value="${value}"/></div>`
+
+                datatable+= template_string
+//                console.log(`${key}: ${value} : ${index}` );
+            }else{
+                const template_string = `<div style="display:none">${key}:</div><div style="display:none"><input style="min-width:100%;" id="form_${key}" type="text" value="${value}"/></div>`
+                datatable+= template_string
+            }
+
+        }
+    //         $( "#example2" ).html(datatable);
+            const element_background = document.getElementById('popup_edit_background');
+            element_background.style.display = "block";
+            const element = document.getElementById('popup_edit');
+            element.innerHTML = datatable; 
+          }); 
+         {% comment %} console.log('tests:'); {% endcomment %}
+    }
+    function updateItem(){
+        const id = document.getElementById('form_id').value;
+        const Social_Network = document.getElementById('form_Social_Network').value
+        const Post_Id = document.getElementById('form_Post_Id').value
+        const Key_word = document.getElementById('form_Key_word').value
+        const Names = document.getElementById('form_Names').value
+        const Link_post = document.getElementById('form_Link_post').value
+        const post = document.getElementById('form_post').value
+        const comment =document.getElementById('form_comment').value
+        const device = document.getElementById('form_device').value
+        const location = document.getElementById('form_location').value
+        const Job_title =document.getElementById('form_Job_title').value
+        const time =document.getElementById('form_time').value
+        const user = document.getElementById('form_user').value;
+        const Note = document.getElementById('form_Note').value;
+        const published = document.getElementById('form_published').value;
+        {% comment %} const data_api = {
+            id :id, 
+            Social_Network :Social_Network , 
+            Post_Id : Post_Id,
+            Key_word : Key_word,
+            Names : Names,
+            Link_post : Link_post,
+            post : post,
+            comment : comment,
+            device : device,
+            location : location,
+            Job_title : Job_title,
+            time : time,
+            user : user,
+            Note : Note,
+            published : published
+        } {% endcomment %}
+        {% comment %} console.log('data-api : ',data_api); {% endcomment %}
+        {% comment %} console.log(Object.keys(data_api).length); {% endcomment %}
+        var settings = {
+            "url": `http://127.0.0.1:8000/api/tutorials/${id}`,
+            "method": "PUT",
+            "timeout": 0,
+            "headers": {
+
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify({
+              "id": id,
+              "Social_Network": Social_Network,
+              "Post_Id": Post_Id,
+              "Key_word": Key_word,
+              "Names": Names,
+              "Link_post": Link_post,
+              "post": post,
+              "comment": comment,
+              "device": device,
+              "location": location,
+              "Job_title": Job_title,
+              "time": time, 
+              "user": user,
+              "Note": Note,
+              "published": published
+            }),
+          };
+          
+          $.ajax(settings).done(function (response) {
+            console.log(response);
+          });
+          document.getElementById('popup_edit_background').style.display = "none";
+          console.log('id_user',current_row_user);
+          console.log('id_note',current_row_note);
+          document.getElementsByClassName(current_row_user)[0].textContent = user;
+          document.getElementsByClassName(current_row_note)[0].textContent = Note;
+          current_row_user = "";
+          current_row_note = "";
+    }
+    function cancelFunction(){
+        document.getElementById('popup_edit_background').style.display = 'none';           current_row_user = "";
+                   current_row_note = "";
+    }
+</script>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="{% static '/js/jquery.min.js' %}"></script>
+<!-- Bootstrap 4 -->
+<script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+<!-- DataTables  & Plugins -->
+<script src="{% static '/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static '/js/dataTables.bootstrap4.min.js' %}"></script>
+<script src="{% static '/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static '/js/responsive.bootstrap4.min.js' %}"></script>
+<script src="{% static '/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static '/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static '/js/jszip.min.js' %}"></script>
+<script src="{% static '/js/pdfmake.min.js' %}"></script>
+<script src="{% static '/js/vfs_fonts.js' %}"></script>
+<script src="{% static '/js/buttons.html5.min.js' %}"></script>
+<script src="{% static '/js/buttons.print.min.js' %}"></script>
+<script src="{% static '/js/buttons.colVis.min.js' %}"></script>
+{% comment %} <script src="{% static '/js/edit.js' %}"></script> {% endcomment %}
+ 
+<!-- AdminLTE App -->
+<script src="{% static '/js/adminlte.min.js' %}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{% static '/js/demo.js' %}"></script>
+<!-- Page specific script -->
+
+
+
+</body>
+

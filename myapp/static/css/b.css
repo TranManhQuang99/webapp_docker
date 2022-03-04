@@ -1,0 +1,37 @@
+.a {
+    display: -webkit-box;
+    max-width: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.table td {
+    padding: 5px 10px !important;
+}
+
+.b {
+    width: 102px;
+}
+
+.e {
+    width: 10%;
+}
+
+/* .arrow {
+    position: relative;
+}
+
+.arrow::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    right: 20px;
+    top: 15px;
+    border-top: 2px solid transparent;
+    border-right:2px solid transparent;
+
+} */
+

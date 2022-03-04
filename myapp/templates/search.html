@@ -1,0 +1,13 @@
+<form method='get'>
+
+    <input id="q" name"q" type="text" placeholder="you search....">
+    <input type="submit" value="Search">
+</form>
+
+{% for i in employee %}
+    {{i.id}}
+    {{i.Key_word}}
+    {{i.Job_title}}
+    <br>
+{% endfor %}
+

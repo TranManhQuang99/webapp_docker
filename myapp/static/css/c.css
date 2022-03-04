@@ -1,0 +1,9 @@
+td {
+    padding: 15px 10px 15px;
+    max-width: 350px;
+    border-bottom: 1px solid rgba(27, 26, 26, 0.2);
+}
+
+tr:nth-child(2n) {
+    background: rgba(240, 237, 237, 0.8);
+}

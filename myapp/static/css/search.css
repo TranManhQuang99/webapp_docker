@@ -1,0 +1,61 @@
+#a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.social-network {
+    position: absolute;
+    left: 6%;
+    top: 20%;
+}
+
+.export {
+    position: absolute;
+    top: 17%;
+    right: 20%;
+    display: flex;
+    float: right
+}
+
+.export h6 {
+    margin-right: 80px;
+}
+
+button {
+    height: 38px;
+    margin-top: 30px;
+}
+
+.input-group {
+    display: flex;
+    left: 30%;
+    top: 10%
+}
+
+.btn {
+    margin: initial;
+}
+
+.pagination {
+    position: absolute;
+    right: 850;
+}
+
+.container-fluid {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.mxh {
+    position: absolute;
+    bottom: 80%;
+    left: 20%;
+}

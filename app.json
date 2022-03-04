@@ -1,0 +1,9 @@
+{
+    "apps": [{
+        "name": "server",
+        "args": "runserver 8000",
+        "script": "manage.py",
+        "exec_mode": "fork",
+        "exec_interpreter": "/usr/bin/python3"
+    }]
+}

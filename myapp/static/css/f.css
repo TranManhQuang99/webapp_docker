@@ -1,0 +1,38 @@
+.modal1 {
+    position: fixed;
+    display: none;
+    z-index: 1039;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    max-height: 70vh;
+    background-color: #fff;
+    backdrop-filter: blur(20px);
+  }
+  .overlay {
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+      z-index: 1038;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.25);
+  }
+  .text{
+    width: 800px;
+    height: 210px;
+    overflow-y: auto;
+    color: #333;
+    display: block;
+    margin: 40px auto;
+  }
+
+  .icon{
+      position: absolute;
+      top: 5px;
+      right: 12px;
+      padding: 5px;
+      cursor: pointer;
+  }

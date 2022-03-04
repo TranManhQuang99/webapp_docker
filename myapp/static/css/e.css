@@ -1,0 +1,40 @@
+/* .arrow {
+    position: relative;
+
+}
+
+.arrow::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid white;
+    right: 20px;
+    top: 15px;
+    border-top: 2px solid transparent;
+    border-right:2px solid transparent;
+    transform: rotate(45deg);
+    transition: 0.5s;   
+}
+
+.arrow.active::before{
+    transform: rotate(-45deg);
+} */
+
+.body {
+    background: linear-gradient(-45deg, #e6cdc5, #ca7394, #718b94, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
